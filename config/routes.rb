@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :accounts, only: [:index, :create]
       
-      put "accounts/update", to: "accounts#update"
+    put "accounts", to: "accounts#update"
       post "login", to: "authenticate#create"
     end
   end
